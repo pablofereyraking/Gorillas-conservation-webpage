@@ -1,0 +1,248 @@
+/* GENERAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf0df;
+    color: #243b29;
+    line-height: 1.7;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #102f20;
+    color: white;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+nav a {
+    color: #e1edda;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+nav a:hover {
+    color: #a8d878;
+}
+
+
+/* HERO SECTION - GORILLA IMAGE */
+
+.hero {
+    background:
+        linear-gradient(
+            rgba(8, 35, 20, 0.55),
+            rgba(8, 35, 20, 0.70)
+        ),
+        url("gorilla.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+
+    padding: 140px 20px;
+    min-height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+}
+
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #245238;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 850px;
+    margin: 0 auto 15px;
+}
+
+
+/* INTELLIGENCE CARDS */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+
+    border-bottom: 5px solid #54834c;
+
+    box-shadow: 0 4px 12px
+        rgba(20, 50, 20, 0.12);
+}
+
+.card h3 {
+    color: #326344;
+    margin-bottom: 12px;
+}
+
+
+/* TYPES OF GORILLAS */
+
+.types-section {
+    background-color: #dce8d2;
+}
+
+.section-intro {
+    margin-bottom: 35px;
+}
+
+
+/* GORILLA GRID */
+
+.gorilla-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.gorilla-card {
+    background-color: #f8faf4;
+    padding: 25px;
+    border-radius: 14px;
+
+    border-left: 6px solid #477b43;
+
+    box-shadow: 0 5px 15px
+        rgba(20, 50, 20, 0.12);
+
+    text-align: left;
+
+    transition: transform 0.3s ease;
+}
+
+.gorilla-card:hover {
+    transform: translateY(-6px);
+}
+
+.gorilla-card h3 {
+    color: #1d542f;
+    margin-bottom: 8px;
+    font-size: 21px;
+}
+
+.gorilla-card p {
+    margin-bottom: 12px;
+}
+
+.gorilla-card .scientific {
+    color: #66865a;
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+/* QUOTE SECTION */
+
+.quote {
+    background-color: #173d29;
+    color: #ffffff;
+}
+
+.quote h2 {
+    color: #a8d878;
+}
+
+.quote p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #0c2418;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* MOBILE DESIGN */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    section {
+        padding: 45px 7%;
+    }
+
+    .gorilla-card {
+        text-align: left;
+    }
+
+}
